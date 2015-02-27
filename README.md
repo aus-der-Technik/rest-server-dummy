@@ -25,9 +25,10 @@ node rest-server-dummy
 
 The default server settings are:
 
+|           |           |
 |:----------|----------:|  
-|PORT | 8080 |  
-|DIRECTORY | ./ |  
+|PORT       | 8080      |  
+|DIRECTORY  | ./        |  
 
 Now you can work with the server in your application with the url 
 
@@ -43,7 +44,7 @@ To explain further examples, we asume at this point that you post a document tha
 
 ```json
 {
-   'name': 'james'
+   "name": "james"
 }
 ```
 
@@ -55,7 +56,7 @@ A PUT will alter a document. For example we a document to the same address: some
 
 ```json
 {
-   'gender': 'male'
+   "gender": "male"
 }
 ```
 
@@ -63,8 +64,8 @@ Than the result in the file will be merged to:
 
 ```json
 {
-    'name': 'james',
-    'gender': 'male'
+    "name": "james",
+    "gender": "male"
 }
 ```
 
@@ -76,8 +77,8 @@ A GET on some/great/file.json will return the same document:
 
 ```json
 {
-    'name': 'james',
-    'gender': 'male'
+    "name": "james",
+    "gender": "male"
 }
 ```
 
