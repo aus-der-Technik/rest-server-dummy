@@ -150,8 +150,8 @@ Request-Id: 25570e50-be9e-11e4-b5c2-235a2c2e6d6c
 foo: bar
 ```
 
-## Spend a Sartoschi ##
-if you like this tool, spend a Sartoschi to this address:
+## Spend a Satoshi ##
+if you like this tool, spend a Satoshi to this address:
 
 ```
 1DtvkCh28zqarTEUHtxs7gWtutsv2Cnf9d
