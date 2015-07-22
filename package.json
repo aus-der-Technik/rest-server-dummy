@@ -1,30 +1,30 @@
 {
-  "name": "rest-server-dummy",
-  "version": "1.0.2",
-  "private": false,
-  "homepage": "https://ausdertechnik.de",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/petershaw/rest-server-dummy.git"
-  },
-  "description": "A dummyserver to develop and test rest clients",
-  "main": "restify-dummy.js",
-  "scripts": {
-    "run": "node rest-server-dummy"
-  },
-  "keywords": [
-    "REST",
-    "Test",
-    "mockup"
-  ],
-  "author": "ausdertechnik.de",
-  "license": "MIT",
-  "dependencies": {
-    "async": "^0.9.0",
-    "async-stacktrace": "0.0.2",
-    "mkdirp": "^0.5.0",
-    "restify": "^2.8.5",
-    "string": "^3.0.0",
-    "underscore": "^1.8.2"
-  }
+	"private": false,
+	"description": "A dummyserver to develop and test rest clients",
+	"version": "1.0.3",
+	"author": "ausdertechnik.de",
+	"license": "MIT",
+	"main": "restify-dummy.js",
+	"homepage": "https://ausdertechnik.de",
+	"keywords": [
+		"REST",
+		"Test",
+		"mockup"
+	],
+	"scripts": {
+		"start": "DIRECTORY=./data node rest-server-dummy"
+	},
+	"dependencies": {
+		"async": "^0.9.0",
+		"mkdirp": "^0.5.0",
+		"restify": "^2.8.5",
+		"async-stacktrace": "0.0.2",
+		"string": "^3.0.0",
+		"underscore": "^1.8.2"
+	},
+	"name": "rest-server-dummy",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/petershaw/rest-server-dummy.git"
+	}
 }

@@ -36,6 +36,14 @@ Now you can work with the server in your application with the url
 http://localhost:8080/some/great/file.json
 ```
 
+in 1.0.3 you do not have to provide .json to the resouce
+
+```
+http://localhost:8080/some/great/file
+```
+will generate a file in the /some/great directory that called file.json
+
+
 ### POST ###
 
 Everytime you post a document to the server it will create a file in the DIRECTORY. If you are working with the default setting, and post /some/great/file.json, than a directory called "some" will be created in your current work directory. Inside that directory an other one named "great" is created and inside this a file named "file.json" stores the content from your POST Request. 
