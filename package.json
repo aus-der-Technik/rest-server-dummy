@@ -2,7 +2,7 @@
 	"private": false,
 	"description": "A dummyserver to develop and test rest clients",
 	"version": "1.0.3",
-	"author": "ausdertechnik.de",
+	"author": "aus der Technik - Simon & Simon GbR",
 	"license": "MIT",
 	"main": "restify-dummy.js",
 	"homepage": "https://ausdertechnik.de",
