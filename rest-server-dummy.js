@@ -70,7 +70,7 @@ server.use(function(req, res, next){
     directory.pop();
     var filename = directory.join(path.sep) + '/' + path.basename(req.url, path.extname(req.url)) + '.response';
     fs.readFile( filename, {encoding: "utf-8"}, function (err, data) {
-        if (err){ return next() };
+        if (err){ return next(); }
         var headers = JSON.parse(data);         
         _.each(_.keys(headers), function(key){
             res.header(key, headers[key]);      
@@ -105,7 +105,7 @@ server.get('(.*)'
             if(exists){ 
                 fs.readFile( documentDirectory + req.url, {encoding: "utf-8"}, function (err, data) {
                     
-                    if (err){ return res.send(500, err) };
+                    if (err){ return res.send(500, err); }
                     res.send(200, JSON.parse(data));
                     return next();                  
                 });
@@ -129,7 +129,7 @@ server.post('(.*)'
             req.url = req.url + '.json';
         }       
         fs.writeFile( documentDirectory + req.url, JSON.stringify(req.body, null, 2), {encoding: "utf-8"}, function (err, data) {
-            if (err){ return res.send(500, err) };
+            if (err){ return res.send(500, err); }
             res.send(201, req.body);
             return next();                  
         });
@@ -151,7 +151,7 @@ server.put('(.*)'
                 function(callback){
                     if(exists){ 
                         fs.readFile( documentDirectory + req.url, {encoding: "utf-8"}, function (err, data) {
-                            if (err){ return callback(err, null) };
+                            if (err){ return callback(err, null); }
                             return callback(null, JSON.parse(data));    
                         });
                     } else {
