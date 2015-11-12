@@ -158,6 +158,9 @@ Request-Id: 25570e50-be9e-11e4-b5c2-235a2c2e6d6c
 foo: bar
 ```
 
+## Questions ##
+Ask us on Twitter @ausderTechnik
+
 ## Spend a Satoshi ##
 if you like this tool, spend a Satoshi to this address:
 
