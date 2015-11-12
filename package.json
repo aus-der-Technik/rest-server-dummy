@@ -1,33 +1,33 @@
 {
-	"private": false,
-	"description": "A dummyserver to develop and test rest clients",
-	"version": "1.0.3",
-	"author": "aus der Technik - Simon & Simon GbR",
-	"license": "MIT",
-	"main": "restify-dummy.js",
 	"homepage": "https://ausdertechnik.de",
+	"description": "A dummyserver to develop and test rest clients",
 	"keywords": [
 		"REST",
 		"Test",
 		"mockup"
 	],
+	"repository": {
+		"url": "https://github.com/aus-der-Technik/rest-server-dummy.git",
+		"type": "git"
+	},
+	"name": "rest-server-dummy",
+	"private": false,
+	"author": "aus der Technik - Simon & Simon GbR",
 	"scripts": {
 		"start": "DIRECTORY=./data node rest-server-dummy"
 	},
-	"dependencies": {
-		"async": "^0.9.0",
-		"mkdirp": "^0.5.0",
-		"restify": "^2.8.5",
-		"async-stacktrace": "0.0.2",
-		"string": "^3.0.0",
-		"underscore": "^1.8.2"
-	},
-	"name": "rest-server-dummy",
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/aus-der-Technik/rest-server-dummy.git"
-	},
+	"version": "1.0.0",
+	"license": "MIT",
 	"publishConfig": {
 		"registry": "https://registry.npmjs.org"
+	},
+	"main": "restify-dummy.js",
+	"dependencies": {
+		"async": "^0.9.0",
+		"restify": "^2.8.5",
+		"async-stacktrace": "0.0.2",
+		"mkdirp": "^0.5.0",
+		"string": "^3.0.0",
+		"underscore": "^1.8.2"
 	}
 }
