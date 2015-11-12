@@ -26,5 +26,8 @@
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/aus-der-Technik/rest-server-dummy.git"
+	},
+	"publishConfig": {
+		"registry": "https://registry.npmjs.org"
 	}
 }
