@@ -162,10 +162,18 @@ server.put('(.*)'
                     if( typeof req.body === 'string'){
                         req.body = JSON.parse(req.body);
                     }
-                    var data = _.extend(req.body, results || {} );
+                    var data;
+                    
+                    if(_.isArray(results)){
+                        data = _.clone(results);
+                        data.push(req.body);
+                    } else {
+                        console.log("is ", typeof results);
+                        data = _.extend(req.body, results || {} );
+                    }
                     
                     fs.writeFile( documentDirectory + req.url, JSON.stringify(data, null, 2), {encoding: "utf-8"}, function (err) {
-                        if (err){ return callback(err); }
+                        if (err) return callback(err);
                         return callback(null, data);        
                     });
                 }
