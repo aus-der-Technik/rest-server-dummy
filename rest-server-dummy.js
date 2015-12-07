@@ -173,7 +173,7 @@ server.put('(.*)'
                     }
                     
                     fs.writeFile( documentDirectory + req.url, JSON.stringify(data, null, 2), {encoding: "utf-8"}, function (err) {
-                        if (err) return callback(err);
+                        if (err){ return callback(err); }
                         return callback(null, data);        
                     });
                 }
