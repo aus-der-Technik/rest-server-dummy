@@ -16,18 +16,18 @@
 	"scripts": {
 		"start": "DIRECTORY=./data node rest-server-dummy"
 	},
-	"version": "1.0.0",
+	"version": "1.2.0",
 	"license": "MIT",
 	"publishConfig": {
 		"registry": "https://registry.npmjs.org"
 	},
 	"main": "restify-dummy.js",
 	"dependencies": {
-		"async": "^0.9.0",
-		"restify": "^2.8.5",
-		"async-stacktrace": "0.0.2",
+		"async": "^2.4.0",
+		"restify": "^4.3.0",
+		"async-stacktrace": "^0.0.2",
 		"mkdirp": "^0.5.0",
-		"string": "^3.0.0",
-		"underscore": "^1.8.2"
+		"string": "^3.3.3",
+		"underscore": "^1.8.3"
 	}
 }
